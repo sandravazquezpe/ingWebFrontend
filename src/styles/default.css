@@ -1,0 +1,244 @@
+ul li {
+  margin-bottom: 20px;
+}
+.div-con-borde {
+  border: 2px solid black;
+  margin: auto;
+}
+.div-entrada {
+  margin: auto; /* Elimina márgenes por defecto del body */
+  padding-left: 20px;          /* Relleno dentro del div */
+  border-radius: 5px; 
+  width: 80vw; 
+  text-align: left;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  padding: 10px;
+  width: 60%;
+  border: 1px solid #ccc;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 15px 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido-card-entrada {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card-izquierda {
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.card-derecha-optional {
+  width: 30%;
+}
+
+.container-desplegables {
+  display : flex;
+  justify-content: space-between;
+}
+
+.version-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clicable-version {
+  cursor: pointer;
+}
+
+.container-mapa {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Hacer responsive el mapa. Que en vez de sea flex-row sea flex-column (hacia abajo) */
+@media (max-width: 768px) {
+  .contenido-card-entrada{
+    flex-direction: column;
+  }
+
+  /* Esto no es necesario, pero para que no se solape mucho que haya un poco de separación con el mapa */
+  .card-izquierda {
+    margin-bottom: 4%;
+  }
+
+  .card-derecha-optional{
+    width: 100%;
+  }
+}
+
+.lista {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.autor-text {
+  color: gray;         /* Texto en gris */
+  font-size: 0.9rem;   /* Tamaño de fuente más pequeño */
+  position: absolute;  /* Coloca el texto en la esquina */
+  top: 10px;           /* Margen superior */
+  left: 10px;          /* Margen izquierdo */
+}
+
+.buscador-container {
+  display: 'flex';
+  justify-content: 'center';
+  align-items: 'center';
+  gap: '16px';
+  margin-top: '20px'
+}
+
+.buscador-input {
+  height: 40px; /* Altura del input */
+  padding: 0 10px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 4px; /* Bordes redondeados */
+  outline: none; /* Quita el borde azul al enfocarse */
+
+}
+
+.buscador-button {
+  height: 40px; /* Altura del botón igual al input */
+  padding: 0 20px; /* Espaciado interno */
+  font-size: 16px; /* Tamaño del texto */
+  border: none; /* Sin borde */
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color del texto */
+  border-radius: 4px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.buscador-button:hover {
+  background-color: #0056b3; /* Color al pasar el cursor */
+}
+
+.card {
+  position: relative; /* Necesario para posicionar elementos hijos de forma relativa */
+}
+
+.icon-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex; /* Asegura que los íconos estén en línea */
+  gap: 10px; /* Añade un espacio entre los íconos */
+}
+
+.icon {
+  cursor: pointer; /* Añade un cursor de mano para indicar que son interactivos */
+  font-size: 18px; /* Ajusta el tamaño según lo necesites */
+}
+
+.star {
+  font-size: 24px;
+  margin-right: 5px;
+  transition: color 0.2s;
+}
+.star:hover {
+  color: gold;
+}
+.star.selected {
+  color: gold;
+}
+
+.custom-button {
+  background-color: #f9f9f9 !important;
+  color: gray !important;
+  border: none !important;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none !important; /* Elimina el estilo de sombra */
+}
+
+.custom-button:hover {
+  background-color: white !important; /* Fondo ligeramente más oscuro al pasar el cursor */
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.boton-blanco {
+  background-color: #f0f0f0;
+  color: black; /* Cambia el color del texto según prefieras */
+  border: none; /* Elimina el borde */
+  padding: 10px 15px; /* Ajusta el tamaño del botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  outline: none; /* Elimina el contorno al hacer clic */
+  transition: background-color 0.3s ease; /* Añade una transición para efectos suaves */
+}
+
+.boton-blanco:hover {
+  background-color: white; /* Cambia el color al pasar el ratón por encima */
+}
+
+.btn-versionactual {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-versionactual:hover {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+  border: none;
+  cursor: not-allowed;
+}
+
+
+.toast-body {
+  max-height: 300px; /* Cambia según lo que necesites */
+  overflow-y: auto; /* Habilita el desplazamiento vertical */
+  padding: 10px; /* Añade algo de espacio interno */
+  background-color: #fff; /* Opcional: para asegurar contraste */
+  border: 1px solid #ddd; /* Opcional: bordes ligeros */
+  border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+
+.editor-item {
+  margin: 0 10px; /* Margen a los lados */
+  padding: 5px;   /* Opcional: agrega espacio interno para mejorar la apariencia */
+}
+
+

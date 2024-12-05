@@ -1,0 +1,16 @@
+.cuadro-notificacion-seleccionada {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.boton-volver-atras-notificacion {
+    width: 100%;
+    position: relative;
+    left: 0;
+    text-align: left !important;
+}
+
+.loguito-volver-atras {
+    cursor: pointer
+}

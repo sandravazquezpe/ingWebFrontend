@@ -1,0 +1,62 @@
+.notificaciones {
+    animation: slide-up 0.3s ease-out;
+}
+
+.cuadro-notificaciones-general {
+    position: fixed;
+    margin-top: 2%;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.toast-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-notificaciones-elemento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notificacion-cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.notificacion-loguito {
+    margin: 0 10px;
+}
+
+.notificacion-asunto {
+    width: 90%;
+}
+
+.borrar-notificaciones-loguito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+@keyframes slide-up {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
